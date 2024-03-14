@@ -26,8 +26,8 @@ function App() {
     <div className='flex flex-col items-center pt-5'>
       <div className='container w-full max-w-4xl mt-5 flex flex-col items-center gap-3'>
         <h2>Registros</h2>
-        <Form/>
-        <Grid records={records}/>
+        <Form onEdit={onEdit} setOnEdit={setOnEdit} getRecords={getRecords}/>
+        <Grid records={records} setRecords={setRecords} setOnEdit={setOnEdit}/>
       </div>
       <ToastContainer autoClose={3000} position='bottom-left'/>
     </div>
